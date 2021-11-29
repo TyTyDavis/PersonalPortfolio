@@ -2,47 +2,102 @@
 <head>
 <meta charset="UTF-8">
 <title>Tyler Davis</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 <link type="text/css" href="Stylesheet.css" rel="stylesheet">
 </head>
 <body>
- <header>
- <nav id="navbar">
- <ul id="nav-list">
-   <li><a href="#projects">Projects</a></li>
-   <li><a href="#Games">Games</a></li>
-   <li><a href="#Contact">Contact</a></li>
-   </nav>
-   </header>
-   <section id="welcome-section"><h1>Tyler Davis</h1>
-     <p>Self-taught Python developer and game designer
-       <ul>
-         <li><a href="https://github.com/TyTyDavis" target="_blank" id="profile-link">Github</a></li>
-         <li><a href="https://twitter.com/TylerRDavis" target="_blank">Twitter</a></li>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid">
+       <ul class="navbar-nav">
+         <li class="nav-item">
+           <a class="nav-link" aria-current="page" href="#projects">Projects</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#games">Games</a>
+         </li>
+       </ul>
+     </div>
+ </nav>
+   <section id="welcome-section">
+     <div class="container-fluid">
+       <div class="row">
+    <div class="col-sm-4">
+      <img class="rounded-circle" src="https://pbs.twimg.com/profile_images/1411179939668369416/WctQS6Q2_400x400.jpg">
+    </div>
+    <div class="col-lg-8">
+     <h1>Tyler R. Davis</h1>
+     <p>Hello! I'm a self-taught programmer looking for my first developer job. Right now I primarily use Python/Django, and I'm comfortable with HTML/CSS/JavaScript and Bootstrap. I'm always working on learning new languages and frameworks.
+     <p>I spent the first 7 years of my professional career as a visual journalist, making maps and charts for newspapers. In this role, I found myself occassionally using Python and Javascript, igniting a passion for code that inspired me start seriously teaching myself the foundations of web development.
+     <p>Additionally, I'm a hobbyist game designer, mostly using Pico 8, a retro-inspired engine that uses Lua. I'm particularly interested in procedural generation.
 
-     </ul>
+         <p><a class="btn btn-light" href="https://github.com/TyTyDavis" target="_blank" id="profile-link">Github</a>
+         <a class="btn btn-light" href="https://twitter.com/TylerRDavis" target="_blank">Twitter</a>
+         <a class="btn btn-light" href="https://www.linkedin.com/in/tyler-davis-1529b42a/" target="_blank">LinkedIn</a>
+         <a class="btn btn-light" href="https://tytydavis.itch.io/" target="_blank">Itch.io</a>
+         <a class="btn btn-light" href="mailto: TylerRussellDavis@gmail.com">Email</a>
+       </div>
+    </div></div>
    </section>
    <section id="projects"><h1>Projects</h1>
-   <div class="project-tile">
-     <img src="https://pbs.twimg.com/profile_images/1250537351245443072/TO5K1pJ0_400x400.jpg">
-     <div><h3 id="sheetbot">CharacterSheetBot</h3>
-     <p id="sheetbot"><a href="https://twitter.com/DnDSheetBot" target="_blank">CharacterSheetBot</a> is a Twitter bot that randomly generates a Dungeons and Dragons character, including name, stats, and backstory text. It then prints those stats onto an image of a D&D character sheet, and tweets it out. The bot is built in Python, using the Python Imaging Library and pytracery. All of the code can be found <a href="https://github.com/TyTyDavis/CharacterSheetBot" target="_blank">here</a> on Github.</div>
-     </div>
+     <div class="container-fluid">
+     <div class="row">
+     <div class="col-sm-4">
+   <div class="card border-secondary bg-secondary" style="height: 100%;">
+       <img class="card-img-top" src="https://pbs.twimg.com/media/FFXcitpWQAQS-xC?format=jpg&name=4096x4096" style="object-position: 0 0;">
+       <div class="card-header"> <h5 class="card-title" id="sheetbot">CharacterSheetBot</h5></div>
+     <div class="card-body">
+       <p class="card-text" id="sheetbot">CharacterSheetBot is a Python-based Twitter bot that randomly generates a Dungeons and Dragons character, including name, stats, and backstory text. It then prints those stats onto an image of a D&D character sheet, and tweets it out.
+       </br>
+       <a href="https://github.com/TyTyDavis/CharacterSheetBot" target="_blank" class="btn btn-dark">Github repo</a>
+       <a href="https://twitter.com/DnDSheetBot" target="_blank" class="btn btn-dark">Twitter</a>
+    </div></div>
+  </div>
+
+</div></div>
+
    </section>
-   <section id="Games"><h1>Games</h1>
-     <div class="project-tile">
-     <img src="https://www.lexaloffle.com/media/49595/amikasquest%20p8_4.gif">
-     <div><h3 id="amika">Amika's Quest</h3>
-     <p id="sheetbot"><a href="https://tytydavis.itch.io/amikas-quest" target="_blank">Amika's Quest</a> is a procedurally generated dungeon crawler for Pico 8, an 80's style retro fantasy console that uses the Lua scripting language. The games code can be found <a href="https://github.com/TyTyDavis/AmikasQuest" target="_blank">here</a> and the
-Pico 8 cartridge file can be found <a href="https://www.lexaloffle.com/bbs/?tid=44570" target="_blank">here</a>.</div>
+   <section id="games"><h1>Games</h1>
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-sm-4">
+     <div class="card border-secondary bg-secondary" style="height: 100%;">
+         <img class="card-img-top" src="https://www.lexaloffle.com/media/49595/amikasquest%20p8_4.gif" style="object-position: 0 100%;">
+         <div class="card-header"><h5 class="card-title" id="sheetbot">Amika's Quest</h5></div>
+       <div class="card-body">
+         <p class="card-text" id="sheetbot">Amika's Quest is a procedurally generated dungeon crawler for Pico 8, an 80's style retro fantasy console that uses the Lua scripting language.
+         </br>
+         <a href="https://tytydavis.itch.io/amikas-quest" target="_blank" class="btn btn-dark">Game</a>
+         <a href="https://github.com/TyTyDavis/AmikasQuest" target="_blank" class="btn btn-dark">Github Repo</a>
+      </div></div>
+    </div><div class="col-sm-4">
+      <div class="card border-secondary bg-secondary" style="height: 100%;">
+          <img class="card-img-top" src="https://www.lexaloffle.com/media/49595/alpine_0.gif" style="object-position: 0 70%;">
+          <div class="card-header"><h5 class="card-title" id="sheetbot">Alpine Ascent</h5></div>
+        <div class="card-body">
+          <p class="card-text" id="sheetbot">Alpine Ascent is a 2D mountain climbing platformer for Pico 8. The game has attracted a small but mighty speedrunning community on the Pico 8 forums.
+          </br>
+          <a href="https://tytydavis.itch.io/alpine-ascent" target="_blank" class="btn btn-dark">Game</a>
+          <a href="https://www.lexaloffle.com/bbs/?tid=40791" target="_blank" class="btn btn-dark">Forum</a>
+       </div></div>
      </div>
-     <div class="project-tile">
-     <img src="https://www.lexaloffle.com/media/49595/alpine_0.gif">
-     <div><h3 id="amika">Alpine Ascent</h3>
-     <p id="alpine"><a href="https://tytydavis.itch.io/alpine-ascent" target="_blank">Alpine Ascent</a> is a 2D mountain climbing platformer for Pico 8. The cartridge can be found <a href="https://www.lexaloffle.com/bbs/?tid=40791" target="_blank">here</a>.</div>
-     </div>
-   </section>
-   <section id="Contact"><h1>Contact</h1>
-     Email me at <a href="mailto: TylerRussellDavis@gmail.com">TylerRussellDavis@gmail.com</a>
+   <div class="col-sm-4">
+     <div class="card border-secondary bg-secondary" style="height: 100%;">
+         <img class="card-img-top" src="https://i.imgur.com/JRBrROl.gif" style="object-position: 0 25%;">
+         <div class="card-header"><h5 class="card-title" id="sheetbot">Mech Force Inferno</h5></div>
+       <div class="card-body">
+         <p class="card-text" id="sheetbot">Made in two weeks for Mech Jam 2021, Mech Force Inferno is a turn-based strategy where you command a team of robots the fight wildfires.
+         </br>
+         <a href="https://tytydavis.itch.io/mech-force-inferno" target="_blank" class="btn btn-dark">Game</a>
+         <a href="https://www.lexaloffle.com/bbs/?tid=45222" target="_blank" class="btn btn-dark">Forum</a>
+      </div></div>
+    </div>
+   </div></div>
    </section>
  </body>
 
